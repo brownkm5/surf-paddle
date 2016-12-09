@@ -1,0 +1,282 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+//header
+.top {
+  background-image: url('../images/waves.jpg');
+  height: 500px;
+}
+
+.header {
+  height: 500px;
+  position: relative;
+
+  .nav-items {
+    margin-top: 10px;
+
+    div {
+      display: inline-block;
+    }
+
+    .brand {
+      .logo {
+        margin-right: 5px;
+      }
+      span {
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .navs {
+      margin-top: 9px;
+      .about-search {
+        span {
+          font-size: 16px;
+          font-stretch: extra-expanded;
+          margin-right: 5px;
+          cursor: pointer;
+        }
+
+        .fa {
+          cursor: pointer;
+          font-size: 15px;
+          font-weight: lighter;
+          -moz-transform: scaleX(-1);
+           -o-transform: scaleX(-1);
+           -webkit-transform: scaleX(-1);
+           transform: scaleX(-1);
+           filter: FlipH;
+           -ms-filter: "FlipH";
+        }
+      }
+    }
+
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 110px;
+
+    h1 {
+      margin-bottom: 0px;
+      font-size: 86px;
+      color: white;
+      font-family: 'Raleway';
+      font-weight: 300;
+      text-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    }
+
+    h5 {
+      margin-top: 0px;
+
+    }
+  }
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 96, 172, .6);
+
+}
+
+//body
+.page-body {
+
+
+  aside, section {
+    // background-color: orange;
+    margin-top: 30px;
+  }
+  aside {
+    text-align: center;
+    .profile {
+      .name {
+        font-size: 20px;
+        color: rgb(41,	124,	186);
+      }
+      .profile-pic {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        img {
+          width: 90px;
+        }
+      }
+    }
+    .social {
+      span {
+        color: rgb(184,	197,	206);
+        cursor: pointer;
+      }
+      .facebook {
+        margin: 0 10px;
+      }
+    }
+    .paddleboarder {
+      margin: 40px 0;
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .side-article {
+      text-align: left;
+      h3 {
+        color: rgb(15,	109,	179);
+      }
+      p {
+        color: rgb(172,	186,	197);
+        line-height: 20px;
+      }
+    }
+  }
+  section {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    .article-title{
+      h1 {
+        word-spacing: -.6px;
+        font-family: 'Oswald';
+        font-size: 60px;
+        color: rgb(8,	52,	82);
+      }
+    }
+
+    .subheader {
+      margin-bottom: 15px;
+      img {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+      }
+      .name {
+        font-size: 15px;
+        color: rgb(41,	124,	186);
+      }
+      .on {
+        color: rgb(193,	203,	212);
+      }
+      .date {
+        text-decoration: underline;
+        color: rgb(162,	178,	190);
+      }
+    }
+    .article-body {
+      line-height: 25px;
+      font-size: 16px;
+      .woah {
+        margin-bottom: 20px;
+        height: 42px;
+        border-left: solid 2px rgb(208,	208,	208);
+        h3 {
+          padding-top: 9px;
+          padding-left: 15px;
+          color: rgb(15,	109,	179);
+        }
+      }
+    }
+    .buttons{
+      div {
+        display: inline-block;
+      }
+      .comment-button, .icon {
+        background-color: grey;
+      }
+    }
+  }
+}
+
+//footer images
+// section.col-sm-12{
+//   padding-left: 0px;
+//   padding-right: 0px;
+// }
+section {
+  .footer-heading {
+    border-top: solid 1px rgb(228,	233,	235);
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    h3 {
+    font-size: 65px;
+    font-family: 'Oswald';
+    color: rgb(8,	52,	82);
+    }
+  }
+  .post {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    // text-align: center;
+    font-size: 25px;
+    // display: flex;
+    // align-items: flex-end;
+
+    span {
+      color: white;
+    }
+  }
+  .post.span:hover {
+    text-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  }
+
+  .post:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 96, 172, .6);
+  }
+  .post:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 96, 172, .0);
+  }
+  .post-one {
+    background-image: url('../images/beijing.jpg');
+  }
+  .post-two {
+    background-image: url('../images/beer.jpg');
+  }
+  .post-three {
+    background-image: url('../images/skate-board.jpg');
+  }
+  .post-four {
+    background-image: url('../images/plants.jpg');
+  }
+}
+
+//nav bottom
+.sds {
+  // position: relative;
+  // bottom: 0px;
+  background-color: rgb(8,	52,	82);
+  height: 50px;
+}
